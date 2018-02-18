@@ -11,6 +11,9 @@
             $books = new Books();
             $book_id = $_GET['book'];
             $book = $books->get_book($book_id);
+            if(!isset($book)) {
+                header('Location: ./error');
+            }
 
             $authors = Books::get_book_authors($book_id);
             $genres = Books::get_book_genres($book_id);

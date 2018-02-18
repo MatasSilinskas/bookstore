@@ -11,7 +11,7 @@ include "views/header.php";
                 $pagination->items_per_page = 6;
                 $books = $pagination->page_items();
                 if(!$pagination->is_valid()) {
-                    header('Location: ./index');
+                    header('Location: ./error');
                 }
                 ?>
                 <div class="inbox-head">                       
