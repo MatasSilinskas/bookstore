@@ -359,3 +359,15 @@ span {
     margin-right: 10px;
     margin-left: 20px;
 }
+.crop{
+  display: block;
+  display: -webkit-box;
+  height: 190px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

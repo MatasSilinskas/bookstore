@@ -9,7 +9,7 @@ include "views/header.php";
                 $book = new Books();
                 $pagination = new Pagination($book);
                 $pagination->items_per_page = 6;
-                $books = $pagination->page_items("Books");
+                $books = $pagination->page_items();
                 if(!$pagination->is_valid()) {
                     header('Location: ./index');
                 }

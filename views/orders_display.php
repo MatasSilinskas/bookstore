@@ -8,7 +8,7 @@
             if(isset($_GET['column']) && isset($_GET['order'])) {
                 $ordered_by = $_GET['column'];
                 $order = $_GET['order'];
-                $params="&column={$ordered_by}&order={$order}";
+                $params = "&column={$ordered_by}&order={$order}";
             }
             else {
                 $order = "ASC";

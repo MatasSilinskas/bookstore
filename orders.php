@@ -19,7 +19,7 @@ include "views/header.php";
             $pagination = new Pagination($data);
             $orders = $pagination->page_items();
             if(!$pagination->is_valid()) {
-                header('Location: ./orders');
+                header('Location: ./error');
             }
             ?>
             <div class="inbox-head">                       

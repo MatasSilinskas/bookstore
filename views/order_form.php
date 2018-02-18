@@ -12,7 +12,7 @@
                                 E-Mail 
                             </label>
                             <div class="controls">
-                                <input name="email" type="email" class="form-control">
+                                <input name="email" type="email" class="form-control" required>
                             </div>
                         </div>
 
@@ -21,7 +21,7 @@
                                 Street Address
                             </label>
                             <div class="controls">
-                                <input name="address" placeholder="Street name, 01" type="text" class="form-control">            
+                                <input name="address" placeholder="Street name, 01" type="text" class="form-control" required>            
                             </div>   
                         </div>
 
@@ -30,7 +30,7 @@
                                 Zip Code
                             </label>
                             <div class="controls">
-                                <input name="zip" type="number" class="form-control">
+                                <input name="zip" type="number" class="form-control" required>
                             </div>
                         </div>
 
@@ -39,7 +39,7 @@
                                 City
                             </label>
                             <div class="controls">
-                                <input name="city" type="text" class="form-control">
+                                <input name="city" type="text" class="form-control" required>
                             </div>
                         </div>
 

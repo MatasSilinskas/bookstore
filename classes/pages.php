@@ -17,7 +17,10 @@ class Pagination {
         }
     }
     function is_valid() {
-        if ($this->current_page <= $this->max_page && $this->current_page >= 1) {
+        if ($this->current_page == 1) {
+            return true;
+        }
+        elseif ($this->current_page <= $this->max_page && ($this->current_page >= 1)) {
             return true;
         }
         else {
